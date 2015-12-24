@@ -20,7 +20,7 @@
 
 /* Variables */
 
-$primary-color: #78b65b;
+$green: #78b65b;
 
 /* wrap */
 
@@ -32,7 +32,7 @@ $primary-color: #78b65b;
 /* text properties */
 
 .text_color {
-  color: $primary-color;
+  color: $green;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
@@ -82,8 +82,12 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   display: block;
 }
 
+.navigation li {
+  border-left: ridge;
+}
+
 .navigation:hover a {
-  color: $primary-color;
+  color: $green;
   text-decoration: none;
 }
 
@@ -92,5 +96,5 @@ h4 a {
 }
 
 body {
-  background-color: $primary-color;
+  background-color: $green;
 }
