@@ -23,6 +23,42 @@
   width: 80%;
 }
 
+/* text color */
+
 .text_color {
   color: #78b65b;
+}
+
+/* Header */
+
+#nav {
+  margin-top: 50px;
+}
+
+.navigation ul {
+  z-index:100;
+  margin-top: 50px;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*Top level list items*/
+
+.navigation ul li {
+  position: relative;
+  display: inline;
+  float: right;
+  margin-left:4px;
+  padding-left: 20px;
+}
+
+/*Top level menu link items style*/
+
+.navigation ul li a {
+  display: block;
+}
+
+.navigation:hover a {
+  color: #78b65b;
+  text-decoration: none;
 }
