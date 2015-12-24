@@ -28,13 +28,30 @@ $primary-color: #78b65b;
   background-color: white;
 }
 
-/* text color */
+/* text properties */
 
 .text_color {
   color: $primary-color;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: helvetica;
+}
+
+/* images */
+
+.front-image {
+  margin-top: 100px;
+}
+
 /* Header */
+
+.header {
+  position: fixed;
+  z-index:100;
+  width: 80%;
+  background-color: white;
+}
 
 #nav {
   margin-top: 50px;
@@ -51,7 +68,7 @@ $primary-color: #78b65b;
 
 .navigation ul li {
   position: relative;
-  display: inline;
+  display: inline !important;
   float: right;
   margin-left:4px;
   padding-left: 20px;
@@ -66,6 +83,10 @@ $primary-color: #78b65b;
 .navigation:hover a {
   color: $primary-color;
   text-decoration: none;
+}
+
+h4 a {
+  color: black;
 }
 
 body {
