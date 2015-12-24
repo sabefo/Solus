@@ -17,16 +17,21 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Variables */
+
+$primary-color: #78b65b;
+
 /* wrap */
 
 .container {
   width: 80%;
+  background-color: white;
 }
 
 /* text color */
 
 .text_color {
-  color: #78b65b;
+  color: $primary-color;
 }
 
 /* Header */
@@ -59,6 +64,10 @@
 }
 
 .navigation:hover a {
-  color: #78b65b;
+  color: $primary-color;
   text-decoration: none;
+}
+
+body {
+  background-color: $primary-color;
 }
