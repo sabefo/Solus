@@ -16,6 +16,7 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+// @import "compass/css3/images";
 
 /* Variables */
 
@@ -51,6 +52,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   z-index:100;
   width: 80%;
   background-color: white;
+  @include gradient-vertical(white, #eff1f2);
 }
 
 #nav {
