@@ -55,13 +55,8 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   @include gradient-vertical(white, #eff1f2);
 }
 
-#nav {
-  margin-top: 50px;
-}
-
 .navigation ul {
   z-index:100;
-  margin-top: 50px;
   padding: 0;
   list-style-type: none;
 }
@@ -80,10 +75,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .navigation ul li a {
   display: block;
-}
-
-.navigation li {
-  border-left: ridge;
+  padding: 40px 15px 40px 15px;
 }
 
 a.header_link:hover {
