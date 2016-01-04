@@ -83,6 +83,11 @@ a.header_link:hover {
   text-decoration: none;
 }
 
+a.header_link:focus {
+  color: $green;
+  text-decoration: none;
+}
+
 h4 a {
   color: black;
 }
