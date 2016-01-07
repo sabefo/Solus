@@ -21,7 +21,7 @@
 /* Variables */
 
 $green: #78b65b;
-
+$dark-green: #298e2e;
 /* wrap */
 
 .container {
@@ -37,6 +37,17 @@ $green: #78b65b;
   background: white;
   -webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0);
   box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0);
+}
+
+/* FORMS */
+
+.register_form {
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* text properties */
@@ -103,4 +114,45 @@ h4 a {
 
 body {
   background-color: $green;
+}
+
+/* Buttons */
+
+.top_buttons {
+  margin-top: 15px;
+}
+
+.top_buttons_2 {
+  margin-top: 20px;
+}
+
+.edit-btn-margin-left {
+  margin-left: 10px;
+}
+
+/* Purple btn */
+
+.btn-primary {
+  background-color: $green;
+  border-color: $green;
+  font-family: 'TitilliumText22LBold';
+}
+
+.btn-primary:focus {
+  background-color: $green;
+  border-color: $green;
+  font-family: 'TitilliumText22LBold';
+  outline: 0;
+}
+
+.btn-primary:active {
+  background-color: $green;
+  border-color: $green;
+  font-family: 'TitilliumText22LBold';
+}
+
+.btn-primary:hover {
+  background-color: $dark-green;
+  border-color: $dark-green;
+  font-family: 'TitilliumText22LBold';
 }

@@ -32,6 +32,8 @@ gem "compass"
 # for readable urls
 gem 'friendly_id'
 
+gem 'simple_form'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -41,6 +43,11 @@ gem 'friendly_id'
 group :production do
   gem 'rails_12factor'
   gem 'puma'
+end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :development, :test do
