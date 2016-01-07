@@ -25,8 +25,18 @@ $green: #78b65b;
 /* wrap */
 
 .container {
+  width: 100%;
+}
+
+#wrap.boxed {
+  /*width:990px;*/
   width: 80%;
-  background-color: white;
+  min-height: 600px;
+  margin:25px auto;
+  margin-top: 0px;
+  background: white;
+  -webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0);
+  box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0);
 }
 
 /* text properties */
@@ -51,7 +61,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   position: fixed;
   z-index:100;
   width: 80%;
-  background-color: white;
   @include gradient-vertical(white, #eff1f2);
 }
 

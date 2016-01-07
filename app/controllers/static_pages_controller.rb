@@ -9,4 +9,7 @@ class StaticPagesController < ApplicationController
   def financing
   end
 
+  def contact
+  end
+  
 end
