@@ -29,6 +29,9 @@ gem "compass"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# for readable urls
+gem 'friendly_id'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
