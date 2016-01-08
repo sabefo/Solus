@@ -1,2 +1,31 @@
-<h1>Contact#index</h1>
-<p>Find me in app/views/contact/index.html.erb</p>
+<% provide(:title, "Contactos") %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <% if @contacts.empty? %>
+      <h1>No hay contactos todavía</h1>
+      <% else %>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>Nombre</td>
+            <td>Teléfono</td>
+            <td>Correo</td>
+            <td>Comentarios</td>
+          </tr>
+        </thead>
+        <% @contacts.each do  |c| %>
+        <tbody>
+          <tr>
+            <td><%= c.name %></td>
+            <td><%= c.phone %></td>
+            <td><%= c.email %></td>
+            <td><%= c.comment %></td>
+          </tr>
+        </tbody>
+        <% end %>
+      </table>
+      <% end %>
+    </div>
+  </div>
+</div>

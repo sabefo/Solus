@@ -4,6 +4,9 @@
   <%= f.input :name,   label: "Nombre",            class: "form-control" %>
   <%= f.input :email, label: "Email",              class: "form-control" %>
   <%= f.input :phone, label: "Teléfono",           class: "form-control" %>
+  <% if params[:action] == "new" %>
+  <h5>Cuéntanos tu situación</h5>
+  <% end %>
   <%= f.input :comment,   label: "Comentarios", as: :text, :input_html => { :rows => 10 },
                                                    class: "form-control" %>
   <% if params[:action] == 'new' %>
