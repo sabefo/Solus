@@ -116,6 +116,12 @@ body {
   background-color: $green;
 }
 
+/* text */
+
+p {
+  text-align: justify;
+}
+
 /* Buttons */
 
 .top_buttons {
@@ -130,7 +136,8 @@ body {
   margin-left: 10px;
 }
 
-/* Purple btn */
+
+/* green */
 
 .btn-primary {
   background-color: $green;

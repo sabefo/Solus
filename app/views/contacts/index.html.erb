@@ -12,6 +12,7 @@
             <td>Teléfono</td>
             <td>Correo</td>
             <td>Comentarios</td>
+            <td>Eliminar</td>
           </tr>
         </thead>
         <% @contacts.each do  |c| %>
@@ -21,6 +22,9 @@
             <td><%= c.phone %></td>
             <td><%= c.email %></td>
             <td><%= c.comment %></td>
+            <%# TODO arreglar boton, no se puede borrar %>
+            <td><%= link_to "Borrar", c, method: :delete, :class => "btn btn-danger btn-xs", 
+            data: { confirm: "¿Estás seguro de borrar a #{c.name}?" } %></td>
           </tr>
         </tbody>
         <% end %>
