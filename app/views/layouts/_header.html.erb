@@ -2,19 +2,21 @@
   <div class="container">
     <div class="row header">
       <div class="col-md-1">
-        <%= link_to image_tag("logo.gif", :style => "height:110px;"), root_path %>
+        <%= link_to image_tag("logo.png", :style => "height:110px;"), root_path %>
       </div>
       <div class="col-md-11">
         <nav class="navigation">
         <ul>
-          <h4><li><%= link_to "Contacto", "#", :class => "header_link" %></li></h4>
-          <h4><li><%= link_to "Preguntas Frecuentes", static_pages_faq_path,
+          <h4><li><%= link_to "Contacto", new_contact_path, :class => "header_link" %></li></h4>
+          <h4><li><%= link_to "Preguntas Frecuentes", faq_path,
           :class => "header_link" %></li></h4>
-          <h4><li><%= link_to "Financiamiento", static_pages_financing_path, :class => "header_link" %></li></h4>
+          <h4><li><%= link_to "Financiamiento", financing_path, :class => "header_link" %></li></h4>
           <h4><li><%= link_to "Productos", "#", :class => "header_link" %></li></h4>
+          <h4><li><%= link_to "Blog", "#", :class => "header_link" %></li></h4>
         </ul>
         </nav>
       </div>
     </div>
   </div>
 </header>
+<br><br><br><br><br><br>

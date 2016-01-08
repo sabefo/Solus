@@ -29,6 +29,11 @@ gem "compass"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# for readable urls
+gem 'friendly_id'
+
+gem 'simple_form'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -38,6 +43,11 @@ gem "compass"
 group :production do
   gem 'rails_12factor'
   gem 'puma'
+end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :development, :test do
